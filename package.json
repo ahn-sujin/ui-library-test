@@ -1,22 +1,36 @@
 {
-  "name": "@asj-ui/react",
+  "name": "@asj/ui",
   "version": "0.0.1",
-  "type": "module",
+  "private": false, 
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "browser": "./browser/specific/main.js",
   "author": {
-    "name":"ahn_sujin"
+    "name":"ahn-sujin"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/ahn-sujin/ui-library-test"
   },
+  "description": "A personalised UI Library.",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepare": "rm -rf dist && mkdir dist && tsc"
   },
+  "keywords": [
+    "design system",
+    "button",
+    "asj"
+  ],
   "dependencies": {
     "@vanilla-extract/css": "^1.14.1",
     "@vanilla-extract/dynamic": "^2.1.0",
@@ -49,5 +63,9 @@
     "typescript": "^5.2.2",
     "vite": "^5.1.4",
     "vite-plugin-dts": "^3.7.3"
+  },
+  "peerDependencies": {
+    "react": "^18.0",
+    "react-dom": "^18.0"
   }
 }
