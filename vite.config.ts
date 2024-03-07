@@ -17,9 +17,9 @@ export default defineConfig({
     // 라이브러리 모드로 빌드하는 데 필요한 설정
     lib: {
       // 진입점, 제공하고자하는 컴포넌트를 모두 export하는 부분
-      entry: resolve(__dirname, "src/components/index.ts"),
+      entry: resolve("src/components/index.ts"),
       // 라이브러리 이름
-      name: "@black-ui/react",
+      name: "@ahnsujin/ui",
       // 출력 파일 이름 지정
       fileName: "index",
       // 라이브러리를 어떤 형식으로 빌드할지 지정 ES모듈, Command JS 형식, umd...?

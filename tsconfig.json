@@ -33,5 +33,5 @@
     "skipLibCheck": true
   },
   // 컴파일 대상 파일들을 설정함
-  "include": ["./src/components/**/*.tsx", "./scr/components/**/*.ts"],
+  "include": ["./src/components/**/*.tsx", "./scr/components/**/*.ts", "src/components/index.ts"],
 }    
